@@ -1,0 +1,186 @@
+/* Configurações Gerais */
+:root {
+    --primary-blue: #815800;
+    --dark-bg: #2d2d2d;
+    --yellow-accent: #fbc02d;
+    --btn-green: #2e7d32;
+    --red-alert: #28b3c6bb;
+    --card-bg-blue: #f4f7fa;
+    --card-bg-pink: #f7f5ff;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-box: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: font-size 0.2s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Barra de Acessibilidade */
+.accessibility-bar {
+    background-color: var(--dark-bg);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.accessibility-bar button {
+    background-color: #ffffff;
+    border: 2px solid var(--yellow-accent);
+    padding: 6px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.accessibility-bar button#btn-tts {
+    background-color: var(--btn-green);
+    color: white;
+    border: none;
+}
+
+/* Hero Banner */
+.hero {
+    background-color: var(--primary-blue);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid var(--yellow-accent);
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.btn-help {
+    background-color: var(--red-alert);
+    color: white;
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.btn-help:hover {
+    transform: scale(1.03);
+}
+
+/* Títulos das Seções */
+.section-block {
+    margin-top: 40px;
+}
+
+h2 {
+    color: var(--primary-blue);
+    font-size: 1.8rem;
+    border-bottom: 3px solid var(--yellow-accent);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+/* Cards (Dicas e Golpes) */
+.card {
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card-blue {
+    background-color: var(--card-bg-blue);
+    border-left: 8px solid var(--primary-blue);
+}
+
+.card-blue h3 {
+    color: var(--primary-blue);
+    margin-bottom: 8px;
+}
+
+.card-pink {
+    background-color: var(--card-bg-pink);
+    border: 1px solid #ffcdd2;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (min-width: 600px) {
+    .card-grid {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.badge {
+    font-weight: bold;
+    min-width: 150px;
+    color: #b71c1c;
+}
+
+/* Caixa de Direitos (Borda Tracejada) */
+.rights-box {
+    background-color: #fffde7;
+    border: 2px dashed #b0bec5;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.rights-box p {
+    margin-bottom: 15px;
+}
+
+.rights-box ul {
+    list-style: none;
+}
+
+.rights-box li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+
+.rights-box li::before {
+    content: "•";
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
